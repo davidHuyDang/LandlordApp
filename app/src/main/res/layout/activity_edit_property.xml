@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditListings">
+
+    <!-- Title TextView for the "Edit Listing" screen -->
+    <TextView
+        android:id="@+id/EditListingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:padding="8dp"
+        android:text="Edit Listing"
+        android:textColor="#673ab7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText for entering the address of the property -->
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Address"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditListingTitle" />
+
+    <!-- EditText for entering the price of the property -->
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- EditText for entering the number of bedrooms in the property -->
+    <EditText
+        android:id="@+id/etBedrooms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of bedrooms"
+        android:inputType="number"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- EditText for entering the image URL of the property -->
+    <EditText
+        android:id="@+id/etImageUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Image URL"
+        android:inputType="textUri"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etBedrooms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- Switch for toggling the availability of the property -->
+    <Switch
+        android:id="@+id/switchAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Available"
+        android:textColor="#673ab7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etImageUrl" />
+
+    <!-- Button to save the changes to the listing -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:paddingVertical="12dp"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchAvailable"
+        app:layout_constraintVertical_bias="0.462" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

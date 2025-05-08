@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView to display the property image -->
+    <ImageView
+        android:id="@+id/imageProperty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop" />
+
+    <!-- TextView to display the property address -->
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- TextView to display the price of the property -->
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="15sp" />
+
+    <!-- TextView to display the number of bedrooms in the property -->
+    <TextView
+        android:id="@+id/tvBedrooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp" />
+
+    <!-- Switch to indicate if the property is available or not -->
+    <Switch
+        android:id="@+id/switchItemAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Available"
+        android:textColor="#673ab7"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- LinearLayout to hold the Edit and Delete buttons in a horizontal orientation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Button to edit the property details -->
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Edit" />
+
+        <!-- Button to delete the property listing -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="Delete" />
+    </LinearLayout>
+</LinearLayout>
